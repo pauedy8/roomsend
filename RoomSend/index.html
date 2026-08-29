@@ -225,7 +225,7 @@
 
       try {
         {const providers = {};
-providers.ws = new Scaffolding.Cloud.WebSocketProvider(["wss://clouddata.turbowarp.org","wss://clouddata.turbowarp.xyz"], "p4-@roomsend.sb3");
+providers.ws = new Scaffolding.Cloud.WebSocketProvider("wss://render-com-setup.onrender.com/", "p4-@roomsend.sb3");
 for (const provider of Object.values(providers)) scaffolding.addCloudProvider(provider);
 scaffolding.addCloudProviderOverride("☁ lastms1", providers["ws"] || null);
 scaffolding.addCloudProviderOverride("☁ needspost1", providers["ws"] || null);
